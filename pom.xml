@@ -6,6 +6,10 @@
 	<artifactId>logback-example</artifactId>
 	<version>1.1-SNAPSHOT</version>
 
+	<properties>
+		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -36,28 +40,12 @@
 					<tagNameFormat>${maven.build.timestamp}_@{project.version}</tagNameFormat>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>buildnumber-maven-plugin</artifactId>
-				<version>1.4</version>
-				<configuration>
-					<timestampFormat>{0,date,yyyy-MM-dd HH:mm}</timestampFormat>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>validate</phase>
-						<goals>
-							<goal>create</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 
 	<scm>
 		<connection>scm:git:https://github.com/zaychickpavel/logback-example.git</connection>
-	  <tag>HEAD</tag>
+		<tag>HEAD</tag>
   </scm>
 
 </project>
