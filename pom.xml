@@ -4,7 +4,7 @@
 
 	<groupId>my.project</groupId>
 	<artifactId>logback-example</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 
 	<dependencies>
 		<dependency>
@@ -57,7 +57,7 @@
 
 	<scm>
 		<connection>scm:git:https://github.com/zaychickpavel/logback-example.git</connection>
-	  <tag>2017-02-08_1.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 </project>
