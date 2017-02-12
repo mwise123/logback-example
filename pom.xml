@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 <!-- comment -->
 	<!-- com 2-->
-	<groupId>my.project</groupId>
+	          <groupId>my.project</groupId>
 	<artifactId>logback-example</artifactId>
 	<version>1.2-SNAPSHOT</version>
 
